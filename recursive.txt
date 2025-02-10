@@ -1,0 +1,71 @@
+factorial
+package basic;
+
+import java.util.*;
+public class demo {
+	public static int factorial(int n) {
+		if(n==0) {
+			return 1;
+		}
+		return n*factorial(n-1);
+	}
+	public static void main(String[] args) {
+		int number = 5;
+		System.out.println(factorial(number));
+	}
+}
+fibonaaci
+package basic;
+
+import java.util.*;
+public class demo {
+	public static int fibonacci(int n) {
+		if(n<=1) {
+			return n;
+		}
+		return fibonacci(n-1) + fibonacci(n-2);
+	}
+	public static void main(String[] args) {
+		int n = 6;
+		for(int i=0;i<n;i++) {
+		   System.out.println(fibonacci(i));
+		}
+	}
+}
+
+sum of digits
+package basic;
+
+import java.util.*;
+public class demo {
+	public static int sum(int n) {
+		if(n<=1) {
+			return n;
+		}
+		return n+sum(n-1);
+	}
+	public static void main(String[] args) {
+		int n = 6;
+		   System.out.println(sum(n));
+	}
+}
+reverse a number
+package basic;
+
+import java.util.*;
+public class demo {
+	static int sum =0;
+	public static int reverse(int n) {
+		if(n==0) {
+			return n;
+		}
+		int temp = n%10;
+		sum = sum*10+temp;
+	    reverse(n/10); 
+		return sum;
+	}
+	public static void main(String[] args) {
+		int n = 1234;
+			System.out.println(reverse(n));
+	}
+}
